@@ -19,5 +19,5 @@ $login - логин пользователя
 <input type="submit" value="Войти"/>
 <br/>
 <br/>	
-<a href="index.php">Главная страница</a>
+<a href="/index.php">Главная страница</a>
 </form>

@@ -22,7 +22,7 @@
 
 <div id="menu">
 <a href="/page/index/1">Главная страница</a> | 
-<a href="/page/index/2">Каталог товаров</a> | 
+<a href="/page/good">Каталог товаров</a> | 
 <a href="/page/index/3">Оплата и доставка</a> 
 </div>
 

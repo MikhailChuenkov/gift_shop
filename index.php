@@ -25,6 +25,9 @@ case 'page':
 case 'auth':
 	$controller = new C_Auth();
 	break;
+case 'logout':
+	$controller = new C_Logout();
+	break;
 
 default:
 	$controller = new C_Page();

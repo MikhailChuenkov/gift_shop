@@ -47,5 +47,14 @@ $text = $mPages->text_get($id);
 $this->content = $this->Template('v/v_edit.php', array('text' => $text));	
 }
 
-
+public function action_good(){
+$this->title .= '::Каталог товаров';
+$id = isset($this->params[2]) ? (int)$this->params[2] : 1;
+$mPages = M_Pages::Instance();
+$text = $mPages->text_get($id);
+$this->content = $this->goods('v/v_good.php', array('text' => $text, 
+'id' => $id,
+'can_edit' => M_Users::Instance()->Can('EDIT_PAGES')));	
+}
+    
 }

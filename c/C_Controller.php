@@ -69,4 +69,13 @@ $url=BASE_URL."page/index";
 header("location: /$url");
 exit();
 }
+    
+protected function goods($fileName, $vars = array())
+{
+// Установка переменных для шаблона.
+foreach ($vars as $k => $v)
+{
+$$k = $v;
+}
+}
 }
